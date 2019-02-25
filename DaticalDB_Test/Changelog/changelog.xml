@@ -1,0 +1,16 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:appdba="http://www.datical.net/xml/ns/appdba" xmlns:datical="http://www.datical.net/xml/ns/datical" xmlns:storedlogic="http://www.datical.net/xml/ns/storedlogic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" logicalFilePath="Changelog/changelog.xml" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd http://www.datical.net/xml/ns/storedlogic http://www.datical.net/xml/ns/storedlogic-1.0.xsd http://www.datical.net/xml/ns/appdba http://www.datical.net/xml/ns/appdba-1.0.xsd">
+    <changeSet author="NSEKHARA" created="Sun Feb 24 01:46:40 CST 2019" id="CS1">
+        <sql>insert into hr.COUNTRIES columns(COUNTRY_ID,COUNTRY_NAME,REGION_ID) values('NP','NEPAL',3);&#13;
+commit;&#13;
+</sql>
+        <rollback>
+            <sqlFile endDelimiter=";" path="sql/CS1_ROLLBACK.sql" splitStatements="true" stripComments="true"/>
+        </rollback>
+    </changeSet>
+    <changeSet author="NSEKHARA" created="Sun Feb 24 01:56:19 CST 2019" id="CS2">
+        <sql>insert into hr.COUNTRIES columns(COUNTRY_ID,COUNTRY_NAME,REGION_ID) values('NP','NEPAL',3);&#13;
+commit;&#13;
+</sql>
+    </changeSet>
+</databaseChangeLog>
