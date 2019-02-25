@@ -7,4 +7,11 @@
         </rollback>
         <comment>v s3442</comment>
     </changeSet>
+    <changeSet appdba:scriptChecksum="98c9c1329887e247ecf069086fdd8b67" author="nsekhara" created="2019-02-25 16:59-0600" datical:origFileName="CS2.sql" datical:origFilePath="data_dml" datical:version="1" datical:versionStrategy="DEPLOY_ALL" id="20190225165915526_CS2" labels="CS2.sql">
+        <appdba:sqlplus enableRollbackOnError="true" path="data_dml/20190225165915526_CS2.sql" removeSpools="First"/>
+        <rollback>
+            <appdba:sqlplus path="data_dml/20190225165915526_CS2_rollback.sql" removeSpools="First"/>
+        </rollback>
+        <comment>DFFSFSD</comment>
+    </changeSet>
 </databaseChangeLog>
