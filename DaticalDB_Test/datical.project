@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<dbproject:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dbproject="http://datical.com/db/project/1.0" name="DaticalDB_Test" storedLogicExternal="true" deployThreshold="stopOnError" runtimeCredentials="false" multiSchema="false" dbSchemaDefinition="dbDef" enableRowCount="true">
+<dbproject:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dbproject="http://datical.com/db/project/1.0" name="DaticalDB_Test" storedLogicExternal="true" deployThreshold="stopOnError" projectsId="ba986436-bfd9-4b1d-be97-63e97a28cb24" runtimeCredentials="false" multiSchema="false" dbSchemaDefinition="dbDef" enableRowCount="true">
   <dbDefs xsi:type="dbproject:OracleDbDef" name="Dev" driver="oracle.jdbc.OracleDriver" hostname="localhost" port="1521" username="hr" password="aHI=" sid="" serviceName="DEV" enableCompression="false" rowsPerBatch="10000"/>
   <dbDefs xsi:type="dbproject:OracleDbDef" name="REF" driver="oracle.jdbc.OracleDriver" hostname="localhost" port="1521" username="hr" password="aHI=" serviceName="REF" enableCompression="false" rowsPerBatch="10000"/>
   <dbDefs xsi:type="dbproject:OracleDbDef" name="SIT" driver="oracle.jdbc.OracleDriver" hostname="localhost" port="1521" username="hr" password="aHI=" sid="" serviceName="DEV" enableCompression="false" rowsPerBatch="10000"/>
   <plans name="DaticalDB_Test" databaseDefs="//@dbDefs[name='REF'] //@dbDefs[name='Dev'] //@dbDefs[name='SIT']"/>
   <changelog href="Changelog/changelog.xml#//@databaseChangeLog"/>
+  <auditDB xsi:type="dbproject:OracleDbDef" name="Audit" driver="oracle.jdbc.OracleDriver" hostname="localhost" port="1521" username="DATICAL_AUDIT_USER" password="bmluZTluaW5l" defaultSchemaName="DATICAL_AUDIT_USER" dbDefType="audit" serviceName="REF" enableCompression="false" rowsPerBatch="10000"/>
   <schemas name=""/>
 </dbproject:Project>
