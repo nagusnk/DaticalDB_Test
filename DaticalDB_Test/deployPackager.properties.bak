@@ -200,16 +200,23 @@
 #
 
 sqlScmSystem=git
-sqlScmLastImportID=be31dec
+sqlScmLastImportID=7a0e7a43
 sqlScmBranch=master
 sqlScmPath=C:\\Work\\AIG\\Github\\Projects\\DaticalDB_Test\\DaticalDB_Test
 #sqlScmSQLBaseDir=
-#ddbScmSystem=
+ddbScmSystem=git
 #ddbScmBranch=
-#ddbScmPath=
+#ddbScmPath=C:\\Work\\AIG\\Github\\Projects\\DaticalDB_Test\\DaticalDB_Test
 #databaseBackupRestoreLocation=
 databaseBackupMode=ON_DEMAND
 #parallel=
 #ddlExcludeList=
 archive=false
 sqlScmSQLBaseDir=C:\\Work\\AIG\\Github\\Projects\\DaticalDB_Test\\DaticalDB_Test\\Resources\\sql
+
+
+ 
+
+ 
+
+
